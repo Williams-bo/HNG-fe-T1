@@ -183,7 +183,7 @@
       }
 
       /*  */
-      .backend {
+     .backend {
         display: flex;
         flex-direction: column;
         align-items: center;
@@ -194,6 +194,9 @@
       }
       input {
         outline: none;
+        height: 2rem;
+        margin-bottom: 0.5rem;
+        padding-left: 0.5rem;
       }
     </style>
   </head>
@@ -207,19 +210,18 @@
       <p>Cell: <a href="#">555-666-7777</a></p>
       <p>Location: <a href="#">Lagos, Nigeria</a></p>
       <p>Email: <a href="#">Williamssunday170@gmail.com</a></p>
-      <p id="objective">
+    <p id="objective">
         I am a reserved but ambitious young professional seeking a career that
-        fits my professional skills, personality, and murderous tendencies. My
-        good birth, excellent education and phenomenal mathematical faculty have
-        allowed me to advance the prospects of several criminal enterprises.
+        fits my professional skills and personality. My good birth, excellent
+        education and phenomenal mathematical faculty have allowed me to advance
+        the prospects of several coding challenges.
       </p>
       <dl>
         <dt>Education</dt>
         <dd>
-          <h2>Oxford University</h2>
+          <h2>Redeemer's University</h2>
           <p>
-            <strong>Major:</strong> Applied Mathematics<br />
-            <strong>Minor:</strong> Romance Languages
+            <strong>Course of study:</strong> Physics with Electronics<br />
           </p>
         </dd>
       </dl>
@@ -233,43 +235,51 @@
             organization, customer support, travel coordination
           </p>
           <h2>Computer skills</h2>
-          <p>
-            Microsoft productivity software (Word, Excel, etc), Adobe Creative
-            Suite, Windows
+         <p>
+            Microsoft productivity software (Word, Excel, etc), Linux, Html5,
+            Css3, JavaScript, Git, Nodejs, Nuxtjs
           </p>
         </dd>
       </dl>
 
-      <dl>
+       <dl>
         <dt>Experience</dt>
         <dd>
-          <h2>Consulting Criminal<span>London 1892 – present</span></h2>
+          <h2>Frontend Developer<span>Lagos Mar 2021 – July 2021</span></h2>
           <ul>
-            <li>Development within the criminal underworld</li>
-            <li>Conducted negotiations with several rogue governments</li>
+            <li>
+              leading front-end team of 6 to create a fully functional website
+            </li>
+            <li>
+              Perform code reviews of source code submitted by other team
+              members
+            </li>
           </ul>
 
           <h2>
-            The Coldstream Guards<span>Army Coach, London 1889 – 1888</span>
-          </h2>
-          <ul>
-            <li>Recruiting, training and terrorizing young men.</li>
-          </ul>
-
-          <h2>
-            Oxford University<span>Professor of Mathematics 1885 – 1888</span>
+            IT Intern<span
+              >Nigerian Breweries, Lagos Jan 2018 – August 2018</span
+            >
           </h2>
           <ul>
             <li>
-              Published papers in binomials, asteroid dynamics and game theory
+              Provided end-user troubleshooting and desktop support on Windows
+              systems
             </li>
-            <li>Intimidated students</li>
+            <li>
+              Installed, modified and repaired software and hardware to resolve
+              technical issues
+            </li>
+            <li>
+              Developed and maintained strong client relationships to deliver
+              exceptional customer service and problem resolution
+            </li>
           </ul>
         </dd>
       </dl>
       <dl>
         <dt>Hobbies</dt>
-        <dd>World domination, Social Manipulation, Murder Most Foul</dd>
+        <dd>World domination, Gaming, Travelling</dd>
       </dl>
 
       <dl>
@@ -316,7 +326,7 @@
 
     axios({
       method: "post",
-      url: "http://localhost:3000/contact",
+      url: "https://hng-backend.herokuapp.com/contact",
       data: temp,
     }).then(
       (response) => {
