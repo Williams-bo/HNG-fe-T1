@@ -128,6 +128,9 @@
       }
 
       @media screen and (max-width: 400px) {
+        #topForm input {
+          width: 100%;
+        }
         div#resume dl dt {
           border-right: none;
           border-bottom: 1px solid #999;
@@ -208,7 +211,12 @@
       />
       <img src="zuri.jpg" alt="" />
       <h1>Williams Michael</h1>
-      <p>Cell: <a href="#">0701 939 0467</a></p>
+      <p>
+        Github:
+        <a href="https://github.com/Williams-bo"
+          >https://github.com/Williams-bo/</a
+        >
+      </p>
       <p>Location: <a href="#">Lagos, Nigeria</a></p>
       <p>Email: <a href="#">Williamssunday170@gmail.com</a></p>
       <p id="objective">
@@ -239,7 +247,8 @@
           <h2>Computer skills</h2>
           <p>
             Microsoft productivity software (Word, Excel, etc), Linux, Html5,
-            Css3, JavaScript, Git, Nodejs, Nuxtjs
+            Css3, JavaScript, Git, Nodejs, Expressjs, Axios, Nuxtjs, Vuejs,
+            TailwindCss
           </p>
         </dd>
       </dl>
@@ -247,6 +256,11 @@
       <dl>
         <dt>Experience</dt>
         <dd>
+           <h2>Backend Developer<span>HNGi8, Lagos Aug 2021 – Present</span></h2>
+          <ul>
+            <li>Designing a functional mailing system</li>
+            <li>Providing task assignments in scheduled time frame</li>
+          </ul>
           <h2>Frontend Developer<span>Lagos Mar 2021 – July 2021</span></h2>
           <ul>
             <li>
@@ -297,7 +311,7 @@
         </p>
            <p style="display: none" id="success">SEND SUCCESS</p>
         <form action="" class="backendForm">
-          <div>
+        <div id="topForm">
             <input type="text" placeholder="first name" />
             <input type="text" placeholder="last name" />
           </div>
